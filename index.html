@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b17">
+    <title>Criminal Defense — Portfolio</title>
+
+    <!-- Metrics config: replace IDs below and uncomment lines -->
+    <script>
+      window.__METRICS__ = {
+        GA4_ID: "G-XXXXXXX",        // e.g. G-ABC123456
+        YM_ID: "00000000",          // Yandex.Metrica id
+        VK_ID: "VK-RTRG-000000-0",  // VK Ads pixel id
+        FB_ID: "000000000000000",   // Meta Pixel ID
+        TGA_ID: "0000000",          // Telegram Ads pixel id
+      };
+    </script>
+  </head>
+  <body class="bg-[#070b17]">
+    <div id="root"></div>
+
+    <!-- GA4 -->
+    <script>
+      (function() {
+        var ids = (window.__METRICS__||{}).GA4_ID;
+        if (!ids || !/^G-/.test(ids)) return;
+        var s = document.createElement('script');
+        s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ids;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', ids);
+      })();
+    </script>
+
+    <!-- Yandex.Metrica -->
+    <script>
+      (function() {
+        var id = (window.__METRICS__||{}).YM_ID;
+        if (!id || id === "00000000") return;
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date(); k=e.createElement(t), a=e.getElementsByTagName(t)[0], k.async=1, k.src=r, a.parentNode.insertBefore(k,a)})
+          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(id, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+      })();
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+
+    <!-- VK Pixel -->
+    <script>
+      (function() {
+        var id = (window.__METRICS__||{}).VK_ID;
+        if (!id || id === "VK-RTRG-000000-0") return;
+        var s = document.createElement('script');
+        s.innerHTML = "!function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init('"+'"+id+"'+ "'),VK.Retargeting.Hit()},document.head.appendChild(t)}();";
+        document.head.appendChild(s);
+        var img = document.createElement('img'); img.src = 'https://vk.com/rtrg?p=' + id; img.style='position:fixed; left:-9999px;'; document.body.appendChild(img);
+      })();
+    </script>
+
+    <!-- Meta (Facebook) Pixel -->
+    <script>
+      (function() {
+        var id = (window.__METRICS__||{}).FB_ID;
+        if (!id || id === "000000000000000") return;
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', id); fbq('track', 'PageView');
+      })();
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=000000000000000&ev=PageView&noscript=1"/></noscript>
+
+    <!-- Telegram Ads -->
+    <script>
+      (function() {
+        var id = (window.__METRICS__||{}).TGA_ID;
+        if (!id || id === "0000000") return;
+        var s = document.createElement('script'); s.async = true;
+        s.src = 'https://tg.dev/js/ads.js?id=' + id; document.head.appendChild(s);
+      })();
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

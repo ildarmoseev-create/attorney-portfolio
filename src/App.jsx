@@ -460,13 +460,13 @@ export default function App() {
               <ShieldCheck className="h-4 w-4" />{sending ? (lang === "ru" ? "Отправка..." : "Sending...") : t.form.send}<ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </button>
             {status && <div className="text-xs text-slate-300">{status}</div>}
-            <div className="text-xs text-slate-400">lawyer@example.com · +7 (900) 000‑00‑00</div>
+            <div className="text-xs text-slate-400"AdvocateMS@yandex.ru> · +7 (927)154-14-69</div>
           </form>
 
           <div className={`relative rounded-2xl border border-cyan-400/20 bg-[#0a1122]/50 p-6 ${neon.border}`}>
             <div className="mb-3 text-sm font-semibold text-cyan-200">{lang === "ru" ? "Быстрые контакты" : "Quick Contacts"}</div>
             <div className="grid gap-3 text-sm">
-              <a href="tel:+79271541469" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><Phone className="h-4 w-4 text-cyan-300" /> +7 (900) 000‑00‑00</a>
+              <a href="tel:+79271541469" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><Phone className="h-4 w-4 text-cyan-300" /> +7 (927)154-14-69</a>
               <a href="mailto:AdvocateMS@yandex.ru" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><Mail className="h-4 w-4 text-cyan-300" /> lawyer@example.com</a>
               <a href="https://t.me/+79271541469" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><MessageCircle className="h-4 w-4 text-cyan-300" /> Telegram</a>
               <a href="https://wa.me/+79271541469" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><MessageCircle className="h-4 w-4 text-cyan-300" /> WhatsApp</a>

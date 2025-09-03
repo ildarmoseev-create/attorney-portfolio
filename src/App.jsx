@@ -472,7 +472,7 @@ export default function App() {
             <div className="mb-3 text-sm font-semibold text-cyan-200">{lang === "ru" ? "Быстрые контакты" : "Quick Contacts"}</div>
             <div className="grid gap-3 text-sm">
               <a href="tel:+79271541469" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><Phone className="h-4 w-4 text-cyan-300" /> +7 (927)154-14-69</a>
-              <a href="mailto:AdvocateMS@yandex.ru" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><Mail className="h-4 w-4 text-cyan-300" /> lawyer@example.com</a>
+              <a href="mailto:AdvocateMS@yandex.ru" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><Mail className="h-4 w-4 text-cyan-300" /> AdvocateMS@yandex.ru</a>
               <a href="https://t.me/+79271541469" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><MessageCircle className="h-4 w-4 text-cyan-300" /> Telegram</a>
               <a href="https://wa.me/+79271541469" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-200 hover:text-white"><MessageCircle className="h-4 w-4 text-cyan-300" /> WhatsApp</a>
             </div>

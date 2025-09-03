@@ -210,7 +210,7 @@ const content = {
   en: {
     locale: "en",
     brand: "Criminal Defense Attorney",
-    name: "Maria Orlova",
+    name: "Maria Sochan",
     heroTitle: "Defense when freedom is at stake",
     heroSub:
       "Strategic criminal defense at every stage: arrest, investigation, trial. Clear plan, proactive tactics, constant communication.",
